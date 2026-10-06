@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-fixed": "#00201c", "on-primary-container": "#dad7ff", "error-container": "#ffdad6", "on-error-container": "#93000a", "outline-variant": "#c7c4d8", "primary-container": "#4f46e5", "on-tertiary-fixed-variant": "#005048", "on-error": "#ffffff", "tertiary-fixed": "#71f8e4", "surface-container-high": "#e2e7ff", "outline": "#777587", "secondary": "#006a61", "on-background": "#131b2e", "secondary-fixed-dim": "#6bd8cb", "inverse-on-surface": "#eef0ff", "on-secondary-fixed": "#00201d", "primary-fixed": "#e2dfff", "surface-container": "#eaedff", "on-tertiary-container": "#69f1de", "surface-tint": "#4d44e3", "primary-fixed-dim": "#c3c0ff", "error": "#ba1a1a", "surface-variant": "#dae2fd", "on-secondary": "#ffffff", "on-primary": "#ffffff", "surface-container-lowest": "#ffffff", "on-primary-fixed-variant": "#3323cc", "tertiary-container": "#006d62", "on-surface": "#131b2e", "on-primary-fixed": "#0f0069", "inverse-surface": "#283044", "surface-bright": "#faf8ff", "surface": "#faf8ff", "tertiary": "#00534a", "inverse-primary": "#c3c0ff", "on-surface-variant": "#464555", "tertiary-fixed-dim": "#4fdbc8", "surface-container-low": "#f2f3ff", "surface-container-highest": "#dae2fd", "secondary-container": "#86f2e4", "surface-dim": "#d2d9f4", "on-secondary-container": "#006f66", "on-tertiary": "#ffffff", "secondary-fixed": "#89f5e7", "background": "#faf8ff", "on-secondary-fixed-variant": "#005049", "primary": "#3525cd" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-mobile": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "margin": "2rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "gutter-mobile": "1rem", "space-md": "1rem" }, fontFamily: { "body-lg": ["Inter"], "label-md": ["Inter"], "body-md": ["Inter"], "display-lg": ["Inter"], "body-sm": ["Inter"], "headline-lg-mobile": ["Inter"], "display-lg-mobile": ["Inter"], "label-sm": ["Inter"], "headline-sm": ["Inter"], "headline-lg": ["Inter"], "title-md": ["Inter"], "label-lg": ["Inter"], "headline-md": ["Inter"] }, fontSize: { "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}], "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}], "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}], "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "title-md": ["16px", {"lineHeight": "24px", "fontWeight": "600"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="A modern geometric minimalist educational emblem logo for 'ApexLearn LMS'. Featuring an abstract layered graduation cap combined with an open book and forward-leaning learning chevron apex icon. Gradient indigo (#4F46E5) to teal (#0D9488) on a crisp clean background, premium vector look.. Design context: - Primary color: #4f46e5
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XMA4KcG6G8iefC-KAjlvxrcwT44qKKL861Til2lbSbI2BMzcYVYP9wys_m575zxFwHGdCdQ72R2kDTKzblhIZLpqSEb1nB2iSUFyXR5VlJpHE5vdWE7Bh6EGcniDWFohhWE7v2LnY2mN7fo1D5Sq6QbVY9kfa6JqQNjvNazGaxS2BPerdQMN7wjRqZuZGibM0tAwTgaoAmZyEJHf55ODrxg4LyZMIXHE0KW3jXkLAUt8oLeO-c6w0mhXE"/><div class="flex flex-col"><span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary font-semibold leading-none">ApexLearn</span><h1 class="text-title-md font-title-md font-semibold text-on-surface leading-snug line-clamp-1">Home</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative min-w-[44px] min-h-[44px] w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><a class="min-w-[44px] min-h-[44px] flex items-center justify-center p-1 rounded-full transition-transform active:scale-95" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/20" src="https://lh3.googleusercontent.com/aida/AEtjO1XemzcAR-unpqz7ELm9UzYTYXAX26LH6Mt4DbDMEOLrPe62DBR6yaZJB6tlN0E3Hhv4d5j0w5wtKWSe69ApVlCjUf9XTnnDarAN8jqtnXGEvKs-P_5Ksj4wvE82UopGFYaAusGkog2YrbsEsdWorhW1rLDNHtk54pxu75wnobQKbdFAvnrXFf-1NcTfdOLbvlmAA8ykiZg-5vTbfvk7oZfRCtxPP-ykxEzsNgc7EFOr6oXrU6ygE8sXXA"/></a></div></div></header><main class="flex flex-col flex-1 relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full pb-8 space-y-5 px-margin-mobile">
+<!-- Greeting & Daily Motivation -->
+<section class="flex flex-col pt-3">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface flex items-center gap-1.5">
+          Welcome back, Jordan <span class="inline-block transform hover:rotate-12 transition-transform cursor-pointer">👋</span>
+</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          You're on track to achieve your weekly learning target!
+        </p>
+</div>
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+</div>
+<!-- Streak Widget Card -->
+<div class="mt-3.5 bg-surface-container-lowest rounded-xl p-4 shadow-sm relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary-fixed/30 pointer-events-none blur-xl"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</span>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface font-semibold">14-Day Streak!</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">+50 XP Today</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant">Next: 21 days for Bronze Learner Shield</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">82% to target</span>
+</div>
+<!-- Days of Week Mini-Track -->
+<div class="grid grid-cols-7 gap-1.5 mt-3 pt-3 bg-surface-container-low/70 rounded-lg p-2">
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">M</span>
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">T</span>
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">W</span>
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">T</span>
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm font-semibold text-primary">F</span>
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm ring-2 ring-primary/20 scale-105">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-1 opacity-60">
+<span class="font-label-sm text-label-sm text-on-surface-variant">S</span>
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-1 opacity-60">
+<span class="font-label-sm text-label-sm text-on-surface-variant">S</span>
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Stats (2x2 Grid) -->
+<section class="grid grid-cols-2 gap-2.5">
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Hours Learned</span>
+<span class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</span>
+</div>
+<div class="mt-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">28.5 hrs</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-sm text-label-sm font-semibold text-secondary flex items-center">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +12%
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">this month</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Courses</span>
+<span class="w-7 h-7 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">school</span>
+</span>
+</div>
+<div class="mt-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">6 / 8</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Completed paths</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Total XP</span>
+<span class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+</span>
+</div>
+<div class="mt-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">3,420</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-sm text-label-sm font-semibold text-primary">Rank #4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">in batch</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Average Score</span>
+<span class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</span>
+</div>
+<div class="mt-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">94%</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Top 5%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">peer avg</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Continue Learning Hero Card -->
+<section class="flex flex-col space-y-2.5">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Continue Learning</h3>
+<a class="font-label-md text-label-md text-primary font-semibold flex items-center gap-0.5" href="#">
+        My Library
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Media Thumbnail Header with Overlay -->
+<div class="relative w-full h-36 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A focused modern developer workspace screen showing high-end code editor with TypeScript code, dual monitor glow, soft indigo illumination, subtle dark studio lighting, professional software engineering ambiance, high detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZCn08dmaNz0M3aTD_f0J_p004eKzafCtvp_zxtEm-ve6WK-O47h7-qrM1WBBVlbV5okqLD10Lu1SMuY-mQ0UlhZVeWLpZBJfQhGYrFHWLlfNgwsXP191RKFRWRweZDsxez1sZ1GJ98v3sScs7JQk4mmO1hmgXS5CZVST4uucem4TNntQ7F1AcYGOQKxTLktltXmuwGJB_zvWFefX1_nNCUUbc6tPwcKkVlulle1o_rKUVCE6fUpXg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/30 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold shadow-xs">
+            Module 5 of 8
+          </span>
+</div>
+<div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-surface-container-lowest">
+<span class="font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">timelapse</span> 24 mins remaining
+          </span>
+<span class="font-label-sm text-label-sm font-semibold bg-primary-container text-on-primary px-2 py-0.5 rounded-full">
+            In Progress
+          </span>
+</div>
+</div>
+<!-- Course & Lesson Details -->
+<div class="p-4 flex flex-col space-y-3">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold line-clamp-1">
+            Advanced Full-Stack Engineering with Next.js &amp; TypeScript
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-[16px] text-primary">play_circle</span>
+            Lesson 5.3: Server Actions &amp; Optimistic UI
+          </p>
+</div>
+<!-- Progress Bar -->
+<div class="space-y-1">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="text-on-surface-variant">Course Progress</span>
+<span class="font-semibold text-secondary">68%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-secondary transition-all duration-500 ease-out" style="width: 68%;"></div>
+</div>
+</div>
+<!-- Action Row -->
+<div class="flex items-center gap-2 pt-1">
+<a href="course.html" class="flex-1">
+  <button class="w-full min-h-[44px] h-11 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-98 transition-transform" id="resumeLessonBtn">
+    <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+    Resume Lesson
+  </button>
+</a>
+<button class="h-11 px-3.5 bg-surface-container text-on-surface rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">list_alt</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Urgent Deadlines & Quizzes -->
+<section class="flex flex-col space-y-2.5">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-error">notification_important</span>
+        Action Items &amp; Deadlines
+      </h3>
+<span class="font-label-sm text-label-sm font-semibold text-error bg-error-container text-on-error-container px-2 py-0.5 rounded-full">
+        2 Pending
+    </span>
+</div>
+<!-- Alert Card 1: Quiz -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex items-start gap-3 relative overflow-hidden">
+<div class="w-10 h-10 rounded-lg bg-error-container text-on-error-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">quiz</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-sm text-label-sm font-semibold text-error">Due Tomorrow, 11:59 PM</span>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded">20 XP</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold truncate mt-0.5">
+          Quiz 4: Distributed Caching &amp; Redis
+        </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">
+          15 multiple-choice questions · 25 mins limit
+        </p>
+<div class="mt-2.5 flex items-center justify-end">
+<button class="min-h-[36px] px-3.5 bg-error text-on-error rounded-lg font-label-md text-label-md font-semibold flex items-center gap-1 shadow-xs active:scale-95 transition-transform">
+            Start Quiz
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Alert Card 2: Capstone -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex items-start gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">assignment</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Due in 4 days</span>
+<span class="font-label-sm text-label-sm bg-surface-container text-primary font-semibold px-2 py-0.5 rounded-full">Mandatory</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold truncate mt-0.5">
+          Capstone Project Submission: Phase 1
+        </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">
+          Architecture Diagrams &amp; Database Schema
+        </p>
+<div class="mt-2.5 flex items-center justify-end gap-2">
+<button class="min-h-[36px] px-3 bg-surface-container text-on-surface rounded-lg font-label-md text-label-md font-semibold flex items-center gap-1">
+            Rubric
+          </button>
+<button class="min-h-[36px] px-3.5 bg-primary text-on-primary rounded-lg font-label-md text-label-md font-semibold flex items-center gap-1 active:scale-95 transition-transform">
+            Submit Work
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Other Enrolled Courses (Horizontal Carousel) -->
+<section class="flex flex-col space-y-2.5">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Active Curriculum</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Parallel courses you are enrolled in</p>
+</div>
+<a class="font-label-md text-label-md text-primary font-semibold" href="#">View All (4)</a>
+</div>
+<div class="flex gap-3 overflow-x-auto pb-2 -mx-margin-mobile px-margin-mobile scrollbar-none">
+<!-- Course Card 1 -->
+<div class="min-w-[240px] max-w-[240px] bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col shrink-0">
+<div class="h-28 relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Futuristic artificial intelligence and deep neural network synaptic node connections glowing in cyan and teal gradient lines, sleek modern machine learning visual, elegant tech background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCySXrh_JrmcXZCeWdbbFoKxcn-ojK2eeo_ooOlfE_56a8m9GG_NFsvfLG8Z8XhavPQ0aoNRHNgFtkwB_gpI1LW6JZcyDiA0r1Pgj2sk_Eb9qC5-zjXNwThKb0cLWG4XI5w21677G_GWyQM8EPgtR2Bwg_RhF24WnDhz3cBRBgZyjvDzlxmNg58--8wDZU3xBeIhhlr81bx2Mzc-_oiAG_xpeb-foH5hxZI0v3PR4J7Qp-7HaCQuuIG"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold">
+            Tech
+          </span>
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between space-y-2.5">
+<div>
+<h5 class="font-label-lg text-label-lg font-semibold text-on-surface line-clamp-2">
+              Machine Learning Foundations &amp; Neural Networks
+            </h5>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">person</span> Dr. Elena Rostova
+            </p>
+</div>
+<div>
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1">
+<span class="text-on-surface-variant">Progress</span>
+<span class="font-semibold text-secondary">42%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container">
+<div class="h-full rounded-full bg-secondary" style="width: 42%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Course Card 2 -->
+<div class="min-w-[240px] max-w-[240px] bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col shrink-0">
+<div class="h-28 relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="High tech cloud computing datacenter servers and isometric interconnected microservices infrastructure glowing in indigo and slate ambient light, minimalist enterprise cloud architecture aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBzLY3eyHdp33aqel45A3m_-VU2wqHwFudaLJhuDeLUS1AIGJCtOP3AyWcyNYaWEXUPaZZIWiIaoq921VAFJrp68t6DINYZ2VxB1PMNiebq-hQrdM2oq0-IY67DQvUNgsmHqL2XxfDu68mBBx-bQPclE9gNIFxtac9z6Pgxq1u1VDsxyQRIBx_O6UMe0snJIL75HnUfWxvaza3GNGfocSQ0kcxwdChh4rL_v9so_UQLmYX-9v_80VD"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold">
+            DevOps
+          </span>
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between space-y-2.5">
+<div>
+<h5 class="font-label-lg text-label-lg font-semibold text-on-surface line-clamp-2">
+              Cloud Architecture on AWS &amp; Microservices
+            </h5>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-error">assignment_late</span> 1 quiz pending
+            </p>
+</div>
+<div>
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1">
+<span class="text-on-surface-variant">Progress</span>
+<span class="font-semibold text-secondary">85%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container">
+<div class="h-full rounded-full bg-secondary" style="width: 85%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Course Card 3 -->
+<div class="min-w-[240px] max-w-[240px] bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col shrink-0">
+<div class="h-28 relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Modern clean UI design components and color palettes laid out on sleek glass drafting table, mobile app wireframes, vibrant gradient swatches, elegant product design aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmzw9ouMcFj89zOatCzS_8Ubb3_q6sQ9XNMHONtPbFgAlCM2t6XufJzmbeohVr5Ygs6AO6BLwMaTfIcLFZkQri_KsRQP2B-nnw5UGDAuHCR6GgPaHWdYaF5W9A0LnyXFoQ8dJL9nAq3q0nPfIb_du9AXGQn7jUIyftnggtC42sI1PD9yytgpetaJCrA405d4kiFT5DR74tJrYAadjutiFAZTs9YjeXmk0KQsv6jMPmbNuhCsGrghKf"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold">
+            Design
+          </span>
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between space-y-2.5">
+<div>
+<h5 class="font-label-lg text-label-lg font-semibold text-on-surface line-clamp-2">
+              UI/UX Design Systems &amp; Micro-Interactions
+            </h5>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">person</span> Marcus Vance
+            </p>
+</div>
+<div>
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1">
+<span class="text-on-surface-variant">Progress</span>
+<span class="font-semibold text-secondary">15%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container">
+<div class="h-full rounded-full bg-secondary" style="width: 15%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Weekly Activity & Study Goal -->
+<section class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Weekly Study Target</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">5 of 7 daily study goals reached</p>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+        Pace: Excellent
+      </div>
+</div>
+<!-- Mini Activity Bar Chart -->
+<div class="flex items-end justify-between pt-2 h-24 px-2">
+<div class="flex flex-col items-center gap-1.5 flex-1">
+<div class="w-5 bg-primary-container rounded-t-sm" style="height: 60%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mon</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 flex-1">
+<div class="w-5 bg-primary-container rounded-t-sm" style="height: 85%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tue</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 flex-1">
+<div class="w-5 bg-primary-container rounded-t-sm" style="height: 40%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Wed</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 flex-1">
+<div class="w-5 bg-primary-container rounded-t-sm" style="height: 95%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Thu</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 flex-1">
+<div class="w-5 bg-secondary rounded-t-sm relative shadow-xs" style="height: 70%;">
+<span class="absolute -top-5 left-1/2 -translate-x-1/2 font-label-sm text-label-sm font-bold text-secondary">Today</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Fri</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 flex-1 opacity-40">
+<div class="w-5 bg-surface-container rounded-t-sm" style="height: 20%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sat</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 flex-1 opacity-40">
+<div class="w-5 bg-surface-container rounded-t-sm" style="height: 10%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sun</span>
+</div>
+</div>
+</section>
+<!-- Personalized AI Recommendation Banner -->
+<section class="bg-gradient-to-r from-primary-fixed to-surface-container p-4 rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+</div>
+<div class="pr-2">
+<h5 class="font-label-lg text-label-lg font-semibold text-on-primary-fixed">Ready for a micro-challenge?</h5>
+<p class="font-label-md text-label-md text-on-surface-variant">5-min rapid drill on Async Generators</p>
+</div>
+</div>
+<button class="min-h-[40px] px-3 bg-primary text-on-primary rounded-lg font-label-md text-label-md font-semibold shrink-0 shadow-xs active:scale-95 transition-transform">
+      Start Drill
+    </button>
+</section>
+</div>
+<script>
+  // Micro-interaction for resume lesson button
+  const resumeBtn = document.getElementById('resumeLessonBtn');
+  if (resumeBtn) {
+    resumeBtn.addEventListener('click', () => {
+      resumeBtn.classList.add('opacity-85');
+      resumeBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Loading module...';
+      setTimeout(() => {
+        resumeBtn.classList.remove('opacity-85');
+        resumeBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: \'FILL\' 1;">play_arrow</span> Resume Lesson';
+      }, 1200);
+    });
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-14 h-14 transition-colors text-primary font-semibold" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">dashboard</span><span class="text-label-sm font-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-14 h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="courses" href="#"><span class="material-symbols-outlined text-[24px]">book_2</span><span class="text-label-sm font-label-sm mt-0.5">Courses</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-14 h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="analytics" href="#"><span class="material-symbols-outlined text-[24px]">bar_chart</span><span class="text-label-sm font-label-sm mt-0.5">Analytics</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-14 h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="text-label-sm font-label-sm mt-0.5">Profile</span></a></div></nav></body></html>
